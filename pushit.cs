@@ -62,7 +62,6 @@ namespace pushit
 			// The root page of your application
 			var content = new ContentPage
 			{
-				Title = "xr_3_1_1",
 				BackgroundColor = Color.Teal,
 				Content = new StackLayout
 				{
