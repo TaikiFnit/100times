@@ -25,7 +25,7 @@ namespace pushit
 			var titleLabel = new Label
 			{
 				HorizontalTextAlignment = TextAlignment.Center,
-				Text = "Push Button Quickly!!!",
+				Text = "Push the Button 100times Quickly!!!",
 				TextColor = Color.White,
 				FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
 				FontAttributes = FontAttributes.Italic,
@@ -87,7 +87,7 @@ namespace pushit
 					now = new TimeSpan(0, 0, 0, 0, 0);
 					is_started = true;
 					progress.ProgressTo(currentProgress, 1, Easing.Linear);
-					statusLabel.Text = $"{counter}%";
+					statusLabel.Text = $"{counter}times";
 
 					Device.StartTimer(TimeSpan.FromSeconds(0.1), () => {
 
@@ -134,7 +134,7 @@ namespace pushit
 
 				counter++;
 				currentProgress += 0.01;
-				statusLabel.Text = $"{counter}%";
+				statusLabel.Text = $"{counter}times";
 				progress.ProgressTo(currentProgress, 250, Easing.Linear);
 
 				if (counter >= 100)
