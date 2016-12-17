@@ -1,5 +1,5 @@
 # 100times
-A iOS / Android Application made by Xamarin.
+An iOS / Android Application made by Xamarin.
 
 ## Overview
 Push the button 100times asap.
